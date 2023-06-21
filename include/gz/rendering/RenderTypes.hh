@@ -67,6 +67,7 @@ namespace gz
     class LightVisual;
     class JointVisual;
     class LidarVisual;
+    class FrustumVisual;
     class Light;
     class Marker;
     class Material;
@@ -191,6 +192,10 @@ namespace gz
     /// \typedef LidarVisualPtr
     /// \brief Shared pointer to LidarVisual
     typedef shared_ptr<LidarVisual> LidarVisualPtr;
+
+    /// \typedef FrustumVisualPtr
+    /// \brief Shared pointer to FrustumVisual
+    typedef shared_ptr<FrustumVisual> FrustumVisualPtr;
 
     /// \typedef MaterialPtr
     /// \brief Shared pointer to Material
@@ -353,6 +358,10 @@ namespace gz
     /// \typedef const LidarVisualPtr
     /// \brief Shared pointer to const LidarVisual
     typedef shared_ptr<const LidarVisual> ConstLidarVisualPtr;
+
+    /// \typedef const FrustumVisualPtr
+    /// \brief Shared pointer to const FrustumVisual
+    typedef shared_ptr<const FrustumVisual> ConstFrustumVisualPtr;
 
     /// \typedef const MaterialPtr
     /// \brief Shared pointer to const Material
