@@ -81,18 +81,12 @@ namespace gz
       public: virtual gz::math::Planed Plane(const FrustumVisualPlane _plane) const override;
 
       // Documentation inherited
-      //public: virtual bool Contains(const gz::math::AxisAlignedBox &_b) const override;
-
-      // Documentation inherited
-      //public: virtual bool Contains(const gz::math::Vector3d &_p) const override;
-
-      // Documentation inherited
       public: virtual gz::math::Pose3d Pose() const override;
 
       // Documentation inherited
       public: virtual void SetPose(const gz::math::Pose3d &_pose) override;
 
-      /// \brief Create predefined materials for lidar visual
+      /// \brief Create predefined materials for frustum visual
       public: virtual void CreateMaterials();
 
       /// \brief near value
@@ -219,14 +213,16 @@ namespace gz
 
     /////////////////////////////////////////////////
     template <class T>
-    gz::math::Planed BaseFrustumVisual<T>::Plane(const FrustumVisualPlane _plane) const
+    gz::math::Planed BaseFrustumVisual<T>::Plane(
+          const FrustumVisualPlane _plane) const
     {
       return this->planes[_plane];
     }
 
     /////////////////////////////////////////////////
     template <class T>
-    void BaseFrustumVisual<T>::SetPose(const gz::math::Pose3d &_pose)
+    void BaseFrustumVisual<T>::SetPose(
+          const gz::math::Pose3d &_pose)
     {
       this->pose = _pose;
     }
@@ -235,7 +231,7 @@ namespace gz
     template <class T>
     gz::math::Pose3d BaseFrustumVisual<T>::Pose() const
     {
-	    return this->pose;
+      return this->pose;
     }
     /////////////////////////////////////////////////
     template <class T>
@@ -260,6 +256,6 @@ namespace gz
       return;
     }
     }
-  }
-}
+  }  // namespace rendering
+}  // namespace gz
 #endif

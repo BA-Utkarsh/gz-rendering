@@ -53,8 +53,8 @@ class gz::rendering::Ogre2FrustumVisualPrivate
   public: std::vector<std::shared_ptr<Ogre2DynamicRenderable>> rayLines;
 
   /// \brief Frustum visual type
-  //public: FrustumVisualPlane frustumVisPlane =
-  	  //FrustumVisualPlane::FRUSTUM_PLANE_TOP;
+  // public: FrustumVisualPlane frustumVisPlane =
+          // FrustumVisualPlane::FRUSTUM_PLANE_TOP;
 
   /// \brief The visibility of the visual
   public: bool visible = true;
@@ -143,10 +143,9 @@ void Ogre2FrustumVisual::Update()
   #if (OGRE_VERSION <= ((1 << 16) | (10 << 8) | 7))
     MaterialPtr mat = this->Scene()->Material("Frustum/BlueRay");
   #else
-    //MaterialPtr mat = this->Scene()->Material(rayLineMat); //FIX-ME
     MaterialPtr mat = this->Scene()->Material("Frustum/BlueRay");
   #endif
-  
+
   renderable->SetMaterial(mat, false);
   renderable->SetOperationType(MT_LINE_LIST);
   this->dataPtr->rayLines.push_back(renderable);

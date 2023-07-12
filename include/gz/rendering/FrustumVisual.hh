@@ -172,9 +172,9 @@ namespace gz
       private: void ComputePlanes();
 
       /// \brief Private data pointer
-      //GZ_UTILS_IMPL_PTR(dataPtr)
+      // GZ_UTILS_IMPL_PTR(dataPtr)
     };
     }
-  }
-}
+  }  // namespace rendering
+}  // namespace gz
 #endif

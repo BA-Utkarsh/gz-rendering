@@ -30,7 +30,7 @@ namespace gz
   namespace rendering
   {
     inline namespace GZ_RENDERING_VERSION_NAMESPACE {
-    //
+    
     // Forward declaration
     class Ogre2FrustumVisualPrivate;
 
@@ -72,6 +72,6 @@ namespace gz
       private: std::unique_ptr<Ogre2FrustumVisualPrivate> dataPtr;
     };
     }
-  }
-}
+  }  // namespace rendering
+}  // namespace gz
 #endif

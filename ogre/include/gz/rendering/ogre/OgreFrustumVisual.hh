@@ -72,6 +72,6 @@ namespace gz
       private: std::unique_ptr<OgreFrustumVisualPrivate> dataPtr;
     };
     }
-  }
-}
+  }  // namespace rendering
+}  // namespace gz
 #endif

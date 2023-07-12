@@ -55,6 +55,7 @@ namespace gz
     class DepthCamera;
     class DirectionalLight;
     class DistortionPass;
+    class FrustumVisual;
     class GaussianNoisePass;
     class Geometry;
     class GizmoVisual;
@@ -67,7 +68,6 @@ namespace gz
     class LightVisual;
     class JointVisual;
     class LidarVisual;
-    class FrustumVisual;
     class Light;
     class Marker;
     class Material;
@@ -141,6 +141,10 @@ namespace gz
     /// \brief Shared pointer to DistortionPass
     typedef shared_ptr<DistortionPass> DistortionPassPtr;
 
+    /// \typedef FrustumVisualPtr
+    /// \brief Shared pointer to FrustumVisual
+    typedef shared_ptr<FrustumVisual> FrustumVisualPtr;
+
     /// \typedef GaussianNoisePassPtr
     /// \brief Shared pointer to GaussianNoisePass
     typedef shared_ptr<GaussianNoisePass> GaussianNoisePassPtr;
@@ -192,10 +196,6 @@ namespace gz
     /// \typedef LidarVisualPtr
     /// \brief Shared pointer to LidarVisual
     typedef shared_ptr<LidarVisual> LidarVisualPtr;
-
-    /// \typedef FrustumVisualPtr
-    /// \brief Shared pointer to FrustumVisual
-    typedef shared_ptr<FrustumVisual> FrustumVisualPtr;
 
     /// \typedef MaterialPtr
     /// \brief Shared pointer to Material
@@ -327,6 +327,10 @@ namespace gz
     /// \brief Shared pointer to const DirectionalLight
     typedef shared_ptr<const DirectionalLight> ConstDirectionalLightPtr;
 
+    /// \typedef const FrustumVisualPtr
+    /// \brief Shared pointer to const FrustumVisual
+    typedef shared_ptr<const FrustumVisual> ConstFrustumVisualPtr;
+
     /// \typedef const ConstGaussianNoisePass
     /// \brief Shared pointer to const GaussianNoisePass
     typedef shared_ptr<const GaussianNoisePass> ConstGaussianNoisePass;
@@ -358,10 +362,6 @@ namespace gz
     /// \typedef const LidarVisualPtr
     /// \brief Shared pointer to const LidarVisual
     typedef shared_ptr<const LidarVisual> ConstLidarVisualPtr;
-
-    /// \typedef const FrustumVisualPtr
-    /// \brief Shared pointer to const FrustumVisual
-    typedef shared_ptr<const FrustumVisual> ConstFrustumVisualPtr;
 
     /// \typedef const MaterialPtr
     /// \brief Shared pointer to const Material
