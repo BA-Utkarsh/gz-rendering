@@ -7,6 +7,7 @@ set(tests
   gpu_rays
   heightmap
   lidar_visual
+  mesh
   projector
   render_pass
   scene
@@ -15,6 +16,7 @@ set(tests
   sky
   thermal_camera
   load_unload
+  waves
   wide_angle_camera
 )
 
